@@ -7,7 +7,7 @@ export default function AddTask() {
   const navigate = useNavigate();
 
   const handleSubmit = async (task) => {
-    await axios.post('http://localhost:5000/tasks', task);
+    await axios.post('https://restomart-task-manager-backend-1.onrender.com/tasks', task);
     navigate('/');
   };
 

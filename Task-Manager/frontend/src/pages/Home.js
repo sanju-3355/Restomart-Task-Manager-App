@@ -13,7 +13,7 @@ export default function Home() {
   const fetchTasks = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('http://localhost:5000/tasks');
+      const res = await axios.get('https://restomart-task-manager-backend-1.onrender.com/tasks');
       setTasks(res.data);
     } catch (error) {
       console.error('Error fetching tasks:', error);
@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   const deleteTask = async (id) => {
-    await axios.delete(`http://localhost:5000/tasks/${id}`);
+    await axios.delete(`https://restomart-task-manager-backend-1.onrender.com/tasks/${id}`);
     fetchTasks();
   };
 
