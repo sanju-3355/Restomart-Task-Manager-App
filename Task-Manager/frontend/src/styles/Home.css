@@ -1,0 +1,21 @@
+
+.home-container {
+  padding: 1.5rem;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-container select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+  width: 200px;
+}
